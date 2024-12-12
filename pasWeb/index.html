@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#informasi">Informasi</a></li>
+            <li><a href="#beli-tiket">Beli Tiket</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <header>
+            <h1>Sewa Mobil Impian Anda!</h1>
+        </header>
+    </section>
+
+   
+    <section id="informasi">
+        <div class="form-container">
+            <label for="mobil">Pilih Mobil:</label>
+            <select id="mobil">
+                <option value="avanza">Ferrari</option> pilihan menu
+                <option value="innova">Mazda</option>
+                <option value="fortuner">Hiace</option>
+                <option value="pajero">jeep</option>
+            </select>
+
+            <label for="hari">Jumlah Hari Sewa:</label>
+            <input type="number" id="hari" min="1" required> memasukkan jumlah hari
+
+            <button onclick="hitungBiaya()">Hitung Biaya</button> unutuk hitung biaya harus di buat di file js
+
+            <div id="output">
+                <p id="hasil"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="beli-tiket">
+        <div class="tiket-info">
+            <h2>Pilih Mobil dan Beli Tiket Anda!</h2>
+            <p>Pilih mobil yang diinginkan dan tentukan durasi sewa.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
